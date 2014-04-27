@@ -27,4 +27,5 @@ Known Issues
 - My firefox css is still pretty buggy.
 
 
-!(https://i.imgur.com/3PcwP5U.png)
+![alt tag](https://i.imgur.com/3PcwP5U.png)
+![alt tag](https://i.imgur.com/RISMtDz.png)
