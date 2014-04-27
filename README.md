@@ -18,6 +18,10 @@ F.A.Q.
 - How come the 4chan css isn't working properly?
 
   Most likley because you don't have 4chan X installed.
+  
+- What icons are you using?
+
+  Moka
 
 
 
