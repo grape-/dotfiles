@@ -26,3 +26,5 @@ Known Issues
 - A certain part of the GTK theme is still blue for some reason. I have no idea how to fix it I'm not very experienced with GTK.
 - My firefox css is still pretty buggy.
 
+
+!(https://i.imgur.com/3PcwP5U.png)
