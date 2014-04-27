@@ -1,0 +1,301 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+
+
+/* TABS / TAB BAR / TOOLBAR / MENUBAR */
+
+tab,
+
+.tabs-alltabs-button,
+
+.tabbrowser-arrowscrollbox > .scrollbutton-up,
+
+.tabbrowser-arrowscrollbox > .scrollbutton-down
+
+{
+
+border: 0 !important;
+
+background: transparent !important;
+
+font-size: 8pt; font-family: "Droid Sans","Tamsyn",monospace; line-height: 18px !important; height: 18px !important; min-height: 18px !important;
+
+color: #78797a !important;
+
+margin-left: 0px !important;
+
+margin-top: 0px !important;
+
+margin-right: 1px !important;
+
+border-radius: 0px !important;
+
+padding-bottom: 0px !important;
+
+border-top: 2px solid #ecedee !important;
+
+border-bottom: 2px solid #ecedee !important; 
+
+border-left: 0px solid #ecedee !important;
+
+border-right: 1px solid #ecedee !important;
+
+}
+
+/*ecedee*/
+
+
+
+.tabbrowser-tab label { padding-left: 4px !important; padding-right: 4px !important; padding-top: 0px !important; }
+
+
+
+.tabbrowser-tab .tab-stack { border: 1px solid transparent !important; }
+
+.tabbrowser-tab[selected="true"] .tab-stack {
+
+ background: /*#ecedee*/#ecedee !important; 
+
+ text-shadow: none !important; 
+
+ min-height: 22px !important;
+
+/*border-top: 0px solid #ecedee!important;*/
+
+ outline: 0 !important;
+
+ /*border: 0px solid transparent !important;*/
+
+ border-radius: 0px !important; 
+
+ color: #58000c !important;
+
+ border: 1px solid #ecedee !important; 
+
+}
+
+
+
+.tabbrowser-tab:hover .tab-stack {
+
+    /*color: #FFF !important;
+
+    height: 20px !important;*/
+
+    /*border: 1px solid #ecedee !importnt;
+
+    border-radius: 2px !important;
+
+    background: #ecedee !important;
+
+    */
+
+}
+
+
+
+.tab-icon-image { display: -moz-box!important; display: none !important; }
+
+.tab-throbber { display: none!important; }
+
+.tab-close { display: none; }
+
+
+
+#main-window #toolbar-menubar { border: 0 !important; outline: 0; -moz-appearance: none !important; }
+
+#main-window #menubar-items label { font-size: 8pt; font-family: "Tamsyn",monospace; color: #fff !important; }
+
+#main-window #nav-bar { background: transparent !important; border: 0 !important; }
+
+#main-window #navigator-toolbox { border: 0 !important; border-bottom: 0px solid #ecedee !important; }
+
+
+
+.tabbrowser-tabs { background: /*#ecedee*/#ecedee !important;  height: 19px !important; min-height: 19px !important; /*border: 2px solid #0c0b0b !important;*/ border: 0 !important; outline: 0 !important; margin-top: 0 !important; padding: 0 !important; }
+
+
+
+.tab-close-button { margin-right: 4px !important; display: none !important; }
+
+.tab-close-button .toolbarbutton-icon { list-style-image: none !important; }
+
+.tab-close-button:hover .toolbarbutton-icon { list-style-image: url('http://img17.imageshack.us/img17/200/n6.png') !important; }
+
+.tabs-closebutton { list-style-image: url('http://img17.imageshack.us/img17/200/n6.png') !important; }
+
+
+
+/* NEW TAB BUTTON */
+
+
+
+.tabs-newtab-button {
+
+    list-style-image: url('http://img33.imageshack.us/img33/972/4t9f.png') !important;
+
+    border: 0 !important;
+
+    background: none !important;
+
+    margin-left: 3px !important;
+
+    display: none !important;
+
+}
+
+.tabs-newtab-button:hover { /*border: 0px solid #0D1726 !important;*/ }
+
+/*
+
+.tabbrowser-strip {  height: 16px !important;  ??? }
+
+ */
+
+.tabs-newtab-button,
+
+#TabsToolbar > #new-tab-button ,
+
+#TabsToolbar > #wrapper-new-tab-button > #new-tab-button { list-style-image: url('http://img33.imageshack.us/img33/972/4t9f.png') !important; }
+
+
+
+
+
+
+
+/* HIDE ORANGE MENU BUTTON */
+
+#appmenu-toolbar-button, #appmenu-button-container {display: none}
+
+
+
+
+
+
+
+/* HIDE STATUS BAR */
+
+@-moz-document url(chrome://browser/content/browser.xul) {
+
+    #status-bar { display: none; }
+
+
+
+}
+
+
+
+
+
+/* new URL BAR - tags :. location locationbar navbar navigation bar */
+
+#urlbar-container { width: 280px !important; max-width: 280px !important; min-width: 280px !important; max-height: 22px !important; min-height: 22px !important; margin: -2px !important;  padding: 1px !important; padding-top: 2px !important; margin-right: 0px !important; }
+
+#urlbar { -moz-appearance: none !important; width: 273px !important; max-width: 273px !important; min-width: 273px !important; max-height: 17px !important; min-height: 14px !important; font-size: 8pt !important; margin: 0 !important; padding: 0 !important; margin-left: 3px !important; border: 1px solid #3D3949 !important; margin-top: -1px !important; }
+
+#urlbar * { background: #3D3949 !important; color: #E0D3F2 !important; font-family: "Droid Sans","Tamsyn",monospace; padding-bottom: 0px !important; padding-left: 1px !important; }
+
+.urlbar-history-dropmarker { display: none !important; }
+
+#go-button,#urlbar-go-button { display: none !important; }
+
+.urlbar-icon { display: none !important; }
+
+#urlbar-icons { display: none !important; border-right: 2px solid #5A4B6E !important; width: 2px !important; max-width: 2px !important; float: right !important; padding-left: 2px !important; }
+
+#identity-box { display: none !important; }
+
+#notification-popup-box { display: none !important; }
+
+/*5A4B6E*/
+
+#TabsToolbar { outline: 0px solid #ecedee !important; outline-offset: -0px !important; height: 20px !important; min-height: 20px !important; -moz-appearance: none !important; background: #ecedee !important; }
+
+#navigator-toolbox { padding: 0 !important; margin-bottom: -1px !important; background: #ecedee !important; box-shadow: 0 !important; -moz-border: 0 !important; border: 0 !important; }
+
+
+
+/* FIND AND BOOKMARK TOOLBAR */
+
+/*#FiddToolbar > .findbar-container>* { display: -moz-block !important; } */
+
+/*.browserContainer > findbar { position: fixed !important; background: window !important; margin: 0 important; margin-top: 2px !important; padding: 2px !important;  height: 30px !important;  }
+
+.browserContainer > findbar textbox { border: 0 !important; }*/
+
+#menu_close, .panel-promo-closebutton, #context_closeTab, .tab-close-button, .tabs-closebutton, #addonbar-closebutton { list-style-image: url('http://img17.imageshack.us/img17/200/n6.png') !important; }
+
+
+
+.bookmark-item > .toolbarbutton-icon { display: none; }
+
+toolbarbutton.bookmark-item { font-size: 8pt !important; font-family: "Tamsyn", Monospace; color: #78797a !important;  height: 17px !important; }
+
+#personal-bookmarks { height: 16px !important; margin-top: -9px !important; padding-top: 6px !important; }
+
+
+
+toolbarbutton.bookmark-item:hover:active,toolbarbutton.bookmark-item[open="true"] { padding: 0 !important; -moz-apperance: none !important; border: 0 !important; background: window !important; }
+
+.browserContainer > findbar>* { display: -moz-box !important; background: none !important; font-size: 8pt !important; font-family: "Tamsyn", Monospace; color: #78797a !important; }
+
+.browserContainer > findbar .findbar-textbox { width: 12.5em !important;  height:19px!important;   /*background: #0D1726 !important;*/ padding-right: 20px !important; }
+
+
+
+
+
+
+
+@-moz-document url-prefix(http://),url-prefix(https://) {
+
+    scrollbar {
+
+        -moz-appearance: none !important;
+
+        background: #ecedee !important;
+
+    }
+
+    thumb,scrollbarbutton {
+
+        -moz-appearance: none !important;
+
+        background-color: #ecedee !important;
+
+        border: 0 !important;
+
+    }
+
+     
+
+    scrollbarbutton {
+
+        display: none !important;
+
+    }
+
+     
+
+    scrollbar[orient="vertical"] {
+
+        min-width: 3px !important;
+
+        max-width: 3px !important;
+
+        border-left: 1px solid #ecedee !important;
+
+    }
+
+    scrollbar[orient="horizontal"] {
+
+        min-height: 3px !important;
+
+        max-height: 3px !important;
+
+        border-top: 1px solid #ecedee !important;
+
+    }
+
+}
